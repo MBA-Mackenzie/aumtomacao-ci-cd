@@ -28,16 +28,14 @@ jobs: # Define os trabalhos (jobs) que serão executados
     # As etapas são executadas na ordem em que aparecem
 
     
-      # ETAPA 1 - BAIXAR O CÓDIGO DO REPOSITÓRIO
-     
+      # ETAPA 1 - BAIXAR O CÓDIGO DO REPOSITÓRIO     
 
       # Nome que aparecerá no log da execução
       - name: Clonar repositório
         uses: actions/checkout@v6
 
        
-      # ETAPA 2 - CONFIGURAR O GITHUB PAGES
-    
+      # ETAPA 2 - CONFIGURAR O GITHUB PAGES    
 
       # Nome da etapa
       - name: Configurar GitHub Pages   
