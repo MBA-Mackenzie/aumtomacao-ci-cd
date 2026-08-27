@@ -27,17 +27,17 @@ jobs: # Define os trabalhos (jobs) que serão executados
     steps: # Lista de etapas (steps) que serão executadas
     # As etapas são executadas na ordem em que aparecem
 
-     # ---------------------------------------------------------
+    
       # ETAPA 1 - BAIXAR O CÓDIGO DO REPOSITÓRIO
-      # ---------------------------------------------------------
+     
 
       # Nome que aparecerá no log da execução
       - name: Clonar repositório
         uses: actions/checkout@v6
 
-         # ---------------------------------------------------------
+       
       # ETAPA 2 - CONFIGURAR O GITHUB PAGES
-      # ---------------------------------------------------------
+    
 
       # Nome da etapa
       - name: Configurar GitHub Pages   
@@ -45,9 +45,8 @@ jobs: # Define os trabalhos (jobs) que serão executados
     # Ela prepara o ambiente necessário para publicação no Pages
         uses: actions/configure-pages@v5
 
-        # ---------------------------------------------------------
       # ETAPA 3 - EMPACOTAR OS ARQUIVOS DO SITE
-      # ---------------------------------------------------------
+   
 
       # Nome da etapa
       - name: Fazer upload dos arquivos
@@ -67,9 +66,9 @@ jobs: # Define os trabalhos (jobs) que serão executados
           # imagens etc.
           path: "."
 
-           # ---------------------------------------------------------
+       
       # ETAPA 4 - PUBLICAR O SITE
-      # ---------------------------------------------------------
+      
 
       # Nome da etapa
       - name: Publicar no GitHub Pages
